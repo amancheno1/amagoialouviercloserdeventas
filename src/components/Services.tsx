@@ -37,16 +37,18 @@ const Services: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
-            <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
-              <div className="text-center mb-6">
-                <div className="bg-gradient-to-br from-amber-400 to-amber-600 rounded-full p-4 inline-block mb-4">
-                  <service.icon className="text-white" size={32} />
+          {services.map((service, index) => {
+            const Icon = service.icon;
+            return (
+              <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100">
+                <div className="text-center mb-6">
+                  <div className="bg-gradient-to-br from-amber-400 to-amber-600 rounded-full p-4 inline-block mb-4">
+                    <Icon className="text-white" size={32} />
+                  </div>
+                  <h3 className="text-2xl font-bold text-gray-900 mb-2">{service.title}</h3>
+                  <p className="text-gray-600 mb-4">{service.description}</p>
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">{service.title}</h3>
-                <p className="text-gray-600 mb-4">{service.description}</p>
-                       </div>
-              
+
               <ul className="space-y-3 mb-8">
                 {service.features.map((feature, idx) => (
                   <li key={idx} className="flex items-center text-gray-700">
@@ -55,12 +57,13 @@ const Services: React.FC = () => {
                   </li>
                 ))}
               </ul>
-              
+
               <button className="w-full bg-gradient-to-r from-blue-900 to-indigo-900 text-white py-3 rounded-full font-semibold hover:from-blue-800 hover:to-indigo-800 transition-all duration-300 transform hover:scale-105">
                 Más Información
               </button>
-            </div>
-          ))}
+              </div>
+            );
+          })}
         </div>
       </div>
     </section>

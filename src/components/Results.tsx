@@ -44,16 +44,19 @@ const Results: React.FC = () => {
 
         {/* Stats Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-20">
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
-                <stat.icon className="text-amber-400 mx-auto mb-4" size={48} />
-                <div className="text-4xl font-bold text-white mb-2">{stat.value}</div>
-                <div className="text-xl font-semibold text-gray-300 mb-2">{stat.label}</div>
-                <div className="text-sm text-gray-400">{stat.description}</div>
+          {stats.map((stat, index) => {
+            const Icon = stat.icon;
+            return (
+              <div key={index} className="text-center">
+                <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+                  <Icon className="text-amber-400 mx-auto mb-4" size={48} />
+                  <div className="text-4xl font-bold text-white mb-2">{stat.value}</div>
+                  <div className="text-xl font-semibold text-gray-300 mb-2">{stat.label}</div>
+                  <div className="text-sm text-gray-400">{stat.description}</div>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
