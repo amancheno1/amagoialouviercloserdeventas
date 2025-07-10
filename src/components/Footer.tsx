@@ -1,5 +1,5 @@
 import React from 'react';
-import { Phone, Mail, MapPin, Linkedin, Instagram, Twitter } from 'lucide-react';
+import { Phone, Mail, MapPin, Linkedin, Instagram, Facebook } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const currentYear = new Date().getFullYear();
@@ -19,11 +19,21 @@ const Footer: React.FC = () => {
               <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-amber-500 transition-colors duration-300">
                 <Linkedin size={20} />
               </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-amber-500 transition-colors duration-300">
+              <a 
+                href="https://www.instagram.com/amagoia_louvier/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gray-800 p-2 rounded-full hover:bg-amber-500 transition-colors duration-300"
+              >
                 <Instagram size={20} />
               </a>
-              <a href="#" className="bg-gray-800 p-2 rounded-full hover:bg-amber-500 transition-colors duration-300">
-                <Twitter size={20} />
+              <a 
+                href="https://www.facebook.com/profile.php?id=100009764285753&sk=about" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="bg-gray-800 p-2 rounded-full hover:bg-amber-500 transition-colors duration-300"
+              >
+                <Facebook size={20} />
               </a>
             </div>
           </div>
