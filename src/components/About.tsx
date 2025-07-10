@@ -5,7 +5,7 @@ const About: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-gray-50 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-16">
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Sobre <span className="text-amber-500">Amagoia Louvier</span>
@@ -20,21 +20,21 @@ const About: React.FC = () => {
               ayudándoles a maximizar sus conversiones y alcanzar altas cifras de ventas.
             </p>
             
-            <div className="grid grid-cols-2 gap-6">
-              <div className="text-center bg-gradient-to-r from-amber-500 to-orange-500 text-white py-4 px-6 rounded-2xl shadow-lg">
-                <div className="text-3xl font-bold mb-2">2+</div>
-                <div className="text-sm">Años de Experiencia</div>
+            <div className="grid grid-cols-2 gap-4 mt-8">
+              <div className="text-center bg-gradient-to-r from-amber-500 to-orange-500 text-white py-3 px-4 rounded-xl shadow-lg">
+                <div className="text-2xl font-bold mb-1">2+</div>
+                <div className="text-xs">Años de Experiencia</div>
               </div>
-              <div className="text-center bg-gradient-to-r from-amber-500 to-orange-500 text-white py-4 px-6 rounded-2xl shadow-lg">
-                <div className="text-3xl font-bold mb-2">€2000</div>
-                <div className="text-sm">Ticket Promedio</div>
+              <div className="text-center bg-gradient-to-r from-amber-500 to-orange-500 text-white py-3 px-4 rounded-xl shadow-lg">
+                <div className="text-2xl font-bold mb-1">€2000</div>
+                <div className="text-xs">Ticket Promedio</div>
               </div>
             </div>
           </div>
 
           <div className="relative">
             {/* Professional Photo */}
-            <div className="relative mb-8">
+            <div className="relative">
               <div className="relative overflow-hidden rounded-3xl shadow-2xl">
                 <img 
                   src="/public/amagoia.png" 
@@ -50,34 +50,35 @@ const About: React.FC = () => {
                 <div className="text-xs opacity-90">€2M+ en Ventas</div>
               </div>
             </div>
+          </div>
+        </div>
 
-            {/* Skills Grid */}
-            <div className="bg-gradient-to-br from-blue-900 to-indigo-900 rounded-3xl p-8 text-white">
-              <div className="grid grid-cols-2 gap-6">
-                <div className="text-center">
-                  <Award className="text-amber-400 mx-auto mb-4" size={40} />
-                  <h3 className="font-semibold mb-2">Certificaciones</h3>
-                  <p className="text-sm text-gray-300">NLP Master Practitioner</p>
-                </div>
-                <div className="text-center">
-                  <Brain className="text-amber-400 mx-auto mb-4" size={40} />
-                  <h3 className="font-semibold mb-2">Especialización</h3>
-                  <p className="text-sm text-gray-300">Psicología de Ventas</p>
-                </div>
-                <div className="text-center">
-                  <Clock className="text-amber-400 mx-auto mb-4" size={40} />
-                  <h3 className="font-semibold mb-2">Disponibilidad</h3>
-                  <p className="text-sm text-gray-300">24/7 para clientes VIP</p>
-                </div>
-                <div className="text-center">
-                  <Trophy className="text-amber-400 mx-auto mb-4" size={40} />
-                  <h3 className="font-semibold mb-2">Reconocimiento</h3>
-                  <p className="text-sm text-gray-300">Top 1% de Closers</p>
-                </div>
-              </div>
+        {/* Skills Grid - Separado y ocupando ancho completo */}
+        <div className="bg-gradient-to-br from-blue-900 to-indigo-900 rounded-3xl p-8 text-white">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div className="text-center">
+              <Award className="text-amber-400 mx-auto mb-4" size={40} />
+              <h3 className="font-semibold mb-2">Certificaciones</h3>
+              <p className="text-sm text-gray-300">NLP Master Practitioner</p>
+            </div>
+            <div className="text-center">
+              <Brain className="text-amber-400 mx-auto mb-4" size={40} />
+              <h3 className="font-semibold mb-2">Especialización</h3>
+              <p className="text-sm text-gray-300">Psicología de Ventas</p>
+            </div>
+            <div className="text-center">
+              <Clock className="text-amber-400 mx-auto mb-4" size={40} />
+              <h3 className="font-semibold mb-2">Disponibilidad</h3>
+              <p className="text-sm text-gray-300">24/7 para clientes VIP</p>
+            </div>
+            <div className="text-center">
+              <Trophy className="text-amber-400 mx-auto mb-4" size={40} />
+              <h3 className="font-semibold mb-2">Reconocimiento</h3>
+              <p className="text-sm text-gray-300">Top 1% de Closers</p>
             </div>
           </div>
         </div>
+              </div>
       </div>
     </section>
   );
