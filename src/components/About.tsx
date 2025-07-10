@@ -5,8 +5,8 @@ const About: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-gray-50 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="flex flex-col justify-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Sobre <span className="text-amber-500">Amagoia Louvier</span>
             </h2>
@@ -39,7 +39,7 @@ const About: React.FC = () => {
                 <img 
                   src="/public/amagoia.png" 
                   alt="Amagoia Louvier - Especialista en Ventas de Alto Ticket"
-                  className="w-full h-96 object-cover object-center"
+                  className="w-full h-80 object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent"></div>
               </div>
