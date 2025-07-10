@@ -63,7 +63,7 @@ const CTA: React.FC = () => {
             </div>
           </div>
 
-          <div className="text-white">
+          <div className="bg-gradient-to-br from-blue-900 to-indigo-900 rounded-3xl p-8 text-white shadow-2xl">
             <h3 className="text-3xl font-bold mb-8">¿Por Qué Elegir a Amagoia?</h3>
 
             <div className="space-y-6">
