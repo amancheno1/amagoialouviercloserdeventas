@@ -39,7 +39,7 @@ const About: React.FC = () => {
                 <img 
                   src="/public/amagoia.png" 
                   alt="Amagoia Louvier - Especialista en Ventas de Alto Ticket"
-                  className="w-full h-80 object-cover object-center"
+                  className="w-full h-96 object-cover object-center"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent"></div>
               </div>
