@@ -16,7 +16,7 @@ const CTA: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="bg-white rounded-3xl p-8 shadow-2xl order-2 lg:order-1">
+          <div className="bg-white rounded-3xl p-8 shadow-2xl h-full">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Consulta Estratégica GRATUITA</h3>
             <p className="text-gray-600 mb-6">
               En 30 minutos te ayudo a identificar exactamente qué está frenando tus ventas
@@ -63,8 +63,8 @@ const CTA: React.FC = () => {
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-blue-900 to-indigo-900 rounded-3xl p-8 shadow-2xl order-1 lg:order-2">
-            <h3 className="text-3xl font-bold mb-8 text-white">¿Por Qué Elegir a Amagoia?</h3>
+          <div className="bg-gradient-to-br from-blue-900 to-indigo-900 rounded-3xl p-8 shadow-2xl h-full">
+            <h3 className="text-2xl font-bold mb-6 text-white">¿Por Qué Elegir a Amagoia?</h3>
             <p className="text-gray-200 mb-6">
               Más de 2 años de experiencia cerrando ventas de alto ticket con resultados 
               comprobados y metodología única en el mercado español.
@@ -72,41 +72,37 @@ const CTA: React.FC = () => {
 
             <div className="space-y-4 text-white mb-8">
               <div className="flex items-start space-x-4">
-                <div className="bg-amber-500 rounded-full p-2 mt-1">
-                  <ArrowRight className="text-white" size={20} />
+                <div className="w-2 h-2 bg-amber-500 rounded-full mr-1 mt-2">
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg mb-1">Resultados Inmediatos</h4>
+                  <h4 className="font-semibold text-white mb-1">Resultados Inmediatos</h4>
                   <p className="text-gray-200">Mis clientes ven mejoras en sus conversiones desde la primera semana.</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-amber-500 rounded-full p-2 mt-1">
-                  <ArrowRight className="text-white" size={20} />
+                <div className="w-2 h-2 bg-amber-500 rounded-full mr-1 mt-2">
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg mb-1">Metodología Probada</h4>
+                  <h4 className="font-semibold text-white mb-1">Metodología Probada</h4>
                   <p className="text-gray-200">Sistema desarrollado en +2 años cerrando ventas de alto ticket.</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-amber-500 rounded-full p-2 mt-1">
-                  <ArrowRight className="text-white" size={20} />
+                <div className="w-2 h-2 bg-amber-500 rounded-full mr-1 mt-2">
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg mb-1">Garantía de Resultados</h4>
+                  <h4 className="font-semibold text-white mb-1">Garantía de Resultados</h4>
                   <p className="text-gray-200">Si no mejoras tus ventas, te devuelvo tu inversión.</p>
                 </div>
               </div>
 
               <div className="flex items-start space-x-4">
-                <div className="bg-amber-500 rounded-full p-2 mt-1">
-                  <ArrowRight className="text-white" size={20} />
+                <div className="w-2 h-2 bg-amber-500 rounded-full mr-1 mt-2">
                 </div>
                 <div>
-                  <h4 className="font-semibold text-lg mb-1">Soporte Total</h4>
+                  <h4 className="font-semibold text-white mb-1">Soporte Total</h4>
                   <p className="text-gray-200">Acceso directo a mí para dudas y optimizaciones.</p>
                 </div>
               </div>
