@@ -6,7 +6,7 @@ const About: React.FC = () => {
     <section id="about" className="py-20 bg-gray-50 scroll-mt-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
+          <div className="flex flex-col justify-center">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               Sobre <span className="text-amber-500">Amagoia Louvier</span>
             </h2>
@@ -25,9 +25,9 @@ const About: React.FC = () => {
                 <div className="text-3xl font-bold mb-2">2+</div>
                 <div className="text-sm">Años de Experiencia</div>
               </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-amber-500 mb-2">€2000</div>
-                <div className="text-gray-600">Ticket Promedio</div>
+              <div className="text-center bg-gradient-to-r from-amber-500 to-orange-500 text-white py-4 px-6 rounded-2xl shadow-lg">
+                <div className="text-3xl font-bold mb-2">€2000</div>
+                <div className="text-sm">Ticket Promedio</div>
               </div>
             </div>
           </div>

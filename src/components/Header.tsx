@@ -73,14 +73,6 @@ const Header: React.FC = () => {
             >
               Resultados
             </button>
-            <button 
-              onClick={() => scrollToSection('testimonials')}
-              className={`transition-colors duration-300 hover:text-amber-500 ${
-                isScrolled ? 'text-gray-700' : 'text-white'
-              }`}
-            >
-              Testimonios
-            </button>
             <a 
               href="tel:+34627985178"
               className="bg-amber-500 text-white px-6 py-2 rounded-full hover:bg-amber-600 transition-colors duration-300 flex items-center space-x-2"
@@ -122,12 +114,6 @@ const Header: React.FC = () => {
                 className="block px-3 py-2 text-gray-700 hover:text-amber-500 transition-colors duration-300"
               >
                 Resultados
-              </button>
-              <button 
-                onClick={() => scrollToSection('testimonials')}
-                className="block px-3 py-2 text-gray-700 hover:text-amber-500 transition-colors duration-300"
-              >
-                Testimonios
               </button>
               <a 
                 href="tel:+34600000000"
